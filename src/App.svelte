@@ -1,11 +1,12 @@
 <script>
-	export let name
+	import { Router, Route } from "svelte-routing"
 </script>
 
-<div>
-	<h1>Hello {name}!</h1>
-	<p class="bg-blue-50 m-1">Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</div>
+<Router basepath='community-locker-self-storage/'>
+	<Route>home</Route>
+	<Route path='reservation'>reservation comming soon</Route>
+	<Route path='storage'>storage comming soon</Route>
+</Router>
 
 <style global lang="postcss">
   /* purgecss start ignore */
